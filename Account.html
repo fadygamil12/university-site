@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University</title>
+<meta name="viewport" content="with-device-width, initial-scale =1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="navlinks" id="navlinks">
+            <ul>
+         <i class="fas fa-times" onclick="closemenu()"></i>
+                
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About%20Us.html">ABOUT</a></li>
+            <li><a href="Courses.html">COURSE</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Contact%20Us.html">CONTACT</a></li>
+            <li><a href="Account.html">ACCOUNT</a></li>
+            </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showmenu()"></i>
+          
+        </nav>
+       <div class="accounts">
+    <div class="acc-box">
+           <div id="botn"></div>
+           <button onclick="logintog()" class="acc-btn"> {{name}} </button>
+           <button onclick="regestertog()" class="acc-btn"> Register Now </button>
+           </div>
+           <div class="socialico">
+           <i class="fab fa-facebook"></i>
+           <i class="fab fa-twitter"></i>
+           </div>
+          
+    <form method="post" action="/login" id="login55" class="login">
+           <input name="user" id="inputus" type="text" placeholder=" Username or Email.." required>
+           <input name="pass" id="inputps" type="password" placeholder=" Password.." required>
+           <div class="remember">
+           <input type="checkbox" id="remember"><span>Remember me</span>
+        </div>
+           <button type="submit" class="btn2" onclick="login()"> LOGIN  </button>
+           </form>
+     <form action="includes/signup.inc.php" id="signup55" class="signup">
+           <input name="Uid" id="inputus" type="text" placeholder=" Username .." required>
+           <input name="Email" id="inputus" type="text" placeholder=" Email.." required>
+           <input name="Pwd" id="inputps" type="password" placeholder=" Password.." required>
+           <input name="Pwd2" id="inputps" type="password" placeholder=" Password Again.." required>
+           <div class="remember">
+        </div>
+           <button  name="submit" class="btn2" onclick="login()"> Sign up  </button>
+           </form>
+   
+    </div>
+    
+  
+    </section>
+
+
+
+<!------js add---->
+<script src="script.js"></script>
+</body>
+</html>

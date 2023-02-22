@@ -1,0 +1,58 @@
+doctype html
+html
+  head
+    title University
+    meta(name='viewport', content='with-device-width, initial-scale =1.0')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300;1,400&display=swap', rel='stylesheet')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Style+Script&display=swap', rel='stylesheet')
+    link(rel='stylesheet', href='style.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css', integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==', crossorigin='anonymous', referrerpolicy='no-referrer')
+  body
+    section.header
+      nav
+        a(href='index.html')
+          img(src='images/logo.png')
+        #navlinks.navlinks
+          ul
+            i.fas.fa-times(onclick='closemenu()')
+            li
+              a(href='index.html') HOME
+            li
+              a(href='About%20Us.html') ABOUT
+            li
+              a(href='Courses.html') COURSE
+            li
+              a(href='Blog.html') BLOG
+            li
+              a(href='Contact%20Us.html') CONTACT
+            li
+              a(href='Account.html') ACCOUNT
+        i.fas.fa-bars(onclick='showmenu()')
+      .accounts
+        .acc-box
+          #botn
+          button.acc-btn(onclick='logintog()')  Login
+          button.acc-btn(onclick='regestertog()')  Register 
+        .socialico
+          i.fab.fa-facebook
+          i.fab.fa-twitter
+        form#login55.login(method='post', action='/login')
+          input#inputus(name='user', type='text', placeholder=' Username or Email..', required='')
+          input#inputps(name='pass', type='password', placeholder=' Password..', required='')
+          .remember
+            input#remember(type='checkbox')
+            span Remember me
+          button.btn2(type='submit', onclick='login()')  LOGIN  
+        form#signup55.signup(action='includes/signup.inc.php')
+          input#inputus(name='Uid', type='text', placeholder=' Username ..', required='')
+          input#inputus(name='Email', type='text', placeholder=' Email..', required='')
+          input#inputps(name='Pwd', type='password', placeholder=' Password..', required='')
+          input#inputps(name='Pwd2', type='password', placeholder=' Password Again..', required='')
+          .remember
+          button.btn2(name='submit', onclick='login()')  Sign up  
+    // ----js add--
+    script(src='script.js')

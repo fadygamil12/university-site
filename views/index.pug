@@ -1,0 +1,149 @@
+doctype html
+html
+  head
+    title University
+    meta(name='viewport', content='with-device-width, initial-scale =1.0')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300;1,400&display=swap', rel='stylesheet')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Style+Script&display=swap', rel='stylesheet')
+    link(rel='stylesheet', href='../style.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css', integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==', crossorigin='anonymous', referrerpolicy='no-referrer')
+  body
+    section.header
+      nav
+        a(href='index.html')
+          img(src='../images/logo.png')
+        #navlinks.navlinks
+          ul
+            i.fas.fa-times(onclick='closemenu()')
+            li
+              a(href='index.html') HOME
+            li
+              a(href='About%20Us.html') ABOUT
+            li
+              a(href='Courses.html') COURSE
+            li
+              a(href='Blog.html') BLOG
+            li
+              a(href='Contact%20Us.html') CONTACT
+            li
+              a(href='Account.html') ACCOUNT
+            li 
+              a(href='Account.html') HI #{name} 
+        i.fas.fa-bars(onclick='showmenu()')
+      .bodytext
+        h1 World&apos;s Biggest University 
+        p
+          | Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus,
+          br
+          |  est justo iuvaret eu. Ad qui clita definiebas. 
+          br
+          |  Id sed maluisset principes suscipiantur, nam sumo autem intellegat in. 
+          br
+          |  Ea singulis accusata eum. Summo persius abhorreant mel in.
+        a.btn(href='About%20Us.html') Know more about us
+        .signinout
+          a.btn(href='Account.html') Sign up NOW!
+    section.course
+      h1 Courses we offer
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      .row
+        .course-row
+          h3 Intermediate
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales lacus eget risus facilisis ornare. Sed vel gravida magna. Pellentesque id lobortis ex, ut faucibus magna. Vestibulum vel scelerisque justo. Vestibulum ut ipsum ut massa egestas imperdiet et ut orci. Mauris mi justo, sollicitudin nec dolor at, sagittis faucibus eros.
+        .course-row
+          h3 Degree
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales lacus eget risus facilisis ornare. Sed vel gravida magna. Pellentesque id lobortis ex, ut faucibus magna. Vestibulum vel scelerisque justo. Vestibulum ut ipsum ut massa egestas imperdiet et ut orci. Mauris mi justo, sollicitudin nec dolor at, sagittis faucibus eros.
+        .course-row
+          h3 Post Graduation
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales lacus eget risus facilisis ornare. Sed vel gravida magna. Pellentesque id lobortis ex, ut faucibus magna. Vestibulum vel scelerisque justo. Vestibulum ut ipsum ut massa egestas imperdiet et ut orci. Mauris mi justo, sollicitudin nec dolor at, sagittis faucibus eros.
+      a.btn2(href='Courses.html') Know more about courses
+    section.campus
+      h1 Our Global Campus
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      .row
+        .campus-row
+          img(src='../images/london.png')
+          |  
+          .layer
+            h3 LONDON
+        .campus-row
+          img(src='../images/newyork.png')
+          |  
+          .layer
+            h3 NEW YORK
+        .campus-row
+          img(src='../images/washington.png')
+          .layer
+            h3 WASHINGTON
+    section.facilities
+      h1 Our Facilities
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      .row
+        .fac-row
+          img(src='../images/library.png')
+          .fac-text
+            h3 World Class Library
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        .fac-row
+          img(src='../images/basketball.png')
+          .fac-text
+            h3 Largest Play Ground
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        .fac-row
+          img(src='../images/cafeteria.png')
+          .fac-text
+            h3 Tasty and Healthy Food
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    section.rates
+      h1 What Our Student Says
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      .row
+        .card
+          img(src='../images/user1.jpg')
+          .card-text
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elite.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            h3 Mariam Nabil
+            .stars
+              i.fas.fa-star
+              i.fas.fa-star
+              i.fas.fa-star
+              i.far.fa-star
+              i.far.fa-star
+        .card
+          img(src='../images/user2.jpg')
+          .card-text
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elite.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            h3 Mark Ibrahim
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star-half-alt
+            i.far.fa-star
+    section.footer
+      h1 Enroll For Our Various Online Courses Anywhere Form The World
+      a.btn(href='Contact%20Us.html') Contact Us
+    section.end
+      h3 About Us
+      p
+        | Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus,
+        br
+        |  est justo iuvaret eu. Ad qui clita definiebas.
+      .links
+        i.fab.fa-facebook
+        i.fab.fa-whatsapp
+        i.fab.fa-instagram
+        i.fab.fa-behance
+    // ----js add--
+    script(src='../script.js')

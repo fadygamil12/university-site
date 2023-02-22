@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    title University
+    meta(name='viewport', content='with-device-width, initial-scale =1.0')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300;1,400&display=swap', rel='stylesheet')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Style+Script&display=swap', rel='stylesheet')
+    link(rel='stylesheet', href='style.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css', integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==', crossorigin='anonymous', referrerpolicy='no-referrer')
+  body
+    section.sub-header
+      nav
+        a(href='index.html')
+          img(src='images/logo.png')
+        #navlinks.navlinks
+          ul
+            i.fas.fa-times(onclick='closemenu()')
+            li
+              a(href='index.html') HOME
+            li
+              a(href='About%20Us.html') ABOUT
+            li
+              a(href='Courses.html') COURSE
+            li
+              a(href='Blog.html') BLOG
+            li
+              a(href='Contact%20Us.html') CONTACT
+            li
+              a(href='Account.html') ACCOUNT
+        i.fas.fa-bars(onclick='showmenu()')
+      .bodytext
+        h1 About us 
+    section.about
+      div
+        h2 We are the world&apos;s biggest university
+        p
+          | Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus,Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus,Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus,Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus,Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus,Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus,
+        a.btn2(href='#') EXPLORE NOW
+      div
+        img(src='images/about.jpg')
+    section.end
+      h3 About Us
+      p
+        | Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus,
+        br
+        |  est justo iuvaret eu. Ad qui clita definiebas.
+      .links
+        i.fab.fa-facebook
+        i.fab.fa-whatsapp
+        i.fab.fa-instagram
+        i.fab.fa-behance
+    // ----js add--
+    script(src='script.js')

@@ -1,0 +1,109 @@
+doctype html
+html
+  head
+    title University
+    meta(name='viewport', content='with-device-width, initial-scale =1.0')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300;1,400&display=swap', rel='stylesheet')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Style+Script&display=swap', rel='stylesheet')
+    link(rel='stylesheet', href='style.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css', integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==', crossorigin='anonymous', referrerpolicy='no-referrer')
+  body
+    section.sub-header
+      nav
+        a(href='index.html')
+          img(src='images/logo.png')
+        #navlinks.navlinks
+          ul
+            i.fas.fa-times(onclick='closemenu()')
+            li
+              a(href='index.html') HOME
+            li
+              a(href='About%20Us.html') ABOUT
+            li
+              a(href='Courses.html') COURSE
+            li
+              a(href='Blog.html') BLOG
+            li
+              a(href='Contact%20Us.html') CONTACT
+            li
+              a(href='Account.html') ACCOUNT
+        i.fas.fa-bars(onclick='showmenu()')
+      .bodytext
+        h1 Our Certificate &amp; Online Programs For 2021 
+    section.row
+      .blog-left
+        img(src='../images/certificate.jpg')
+        h3 Our Certificate &amp; Online Programs For 2021
+        p
+          | Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus, est justo iuvaret eu. Ad qui clita definiebas.Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus, est justo iuvaret eu. Ad qui clita definiebas.Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus, est justo iuvaret eu. Ad qui clita definiebas.Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus, est justo iuvaret eu. Ad qui clita definiebas.Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus, est justo iuvaret eu. Ad qui clita definiebas.Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus, est justo iuvaret eu. Ad qui clita definiebas.Eu eros vulputate suscipiantur est.
+          br
+          |  Cu qui commodo minimum delectus, est justo iuvaret eu. Ad qui clita definiebas.Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus, est justo iuvaret eu.
+          br
+          |  Ad qui clita definiebas.Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus, est justo iuvaret eu. Ad qui clita definiebas.Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus, est justo iuvaret eu. Ad qui clita definiebas.Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus, est justo iuvaret eu. Ad qui clita definiebas.Eu eros vulputate suscipiantur est.
+          br
+          br
+          |  Cu qui commodo minimum delectus, est justo iuvaret eu. Ad qui clita definiebas.Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus, est justo iuvaret eu. Ad qui clita definiebas.Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus, est justo iuvaret eu.
+          br
+          |  Ad qui clita definiebas.Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus, est justo iuvaret eu. Ad qui clita definiebas.
+      .blog-right
+        h3 Post Categories
+        div
+          span Business Analytics
+          span 21
+        div
+          span Data Science
+          span 28
+        div
+          span Machine Learning
+          span 15
+        div
+          span Computer Science
+          span 34
+        div
+          span AutoCAD
+          span 42
+        div
+          span Journalism
+          span 22
+        div
+          span Commerce
+          span 30
+    .rateus
+      h3#title12  RATE US    
+      .post
+        h2  Thank&apos;s For Rating us
+      .star
+        input#rate-5(type='radio', name='rate')
+        label.fas.fa-star(for='rate-5')
+        input#rate-4(type='radio', name='rate')
+        label.fas.fa-star(for='rate-4')
+        input#rate-3(type='radio', name='rate')
+        label.fas.fa-star(for='rate-3')
+        input#rate-2(type='radio', name='rate')
+        label.fas.fa-star(for='rate-2')
+        input#rate-1(type='radio', name='rate')
+        label.fas.fa-star(for='rate-1')
+        |  
+        br
+        br
+        br
+        form.comment(action='#')
+          textarea(placeholder='Drop Your Comment..', cols='30')
+          a.btn3(onclick='rate()') Post
+    section.end
+      h3 About Us
+      p
+        | Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus,
+        br
+        |  est justo iuvaret eu. Ad qui clita definiebas.
+      .links
+        i.fab.fa-facebook
+        i.fab.fa-whatsapp
+        i.fab.fa-instagram
+        i.fab.fa-behance
+    // ----js add--
+    script(src='../script.js')
