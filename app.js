@@ -16,7 +16,12 @@ app.set('view engine', 'html');
 app.get('/' , (req,res)=>{
    res.render("index.pug", {name:'fady'});
 })
-
+app.get('/account' , (req, res)=>{
+  res.render("Account.pug");
+})
+app.post('/login' , (req, res) =>{
+  console.log(req);
+});
 app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });

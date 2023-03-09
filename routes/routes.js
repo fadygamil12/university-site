@@ -32,24 +32,7 @@ router
     })
 router
     .route('/login')
-    .get((req,res)=>{
-        res.render('Account.pug')
-    })
     .post((req,res) =>{
-        var user_i = req.body.user;
-        var pass_i = req.body.pass;
-        var query = `
-        SELECT * FROM fady WHERE user = "${user_i}"
-        `
-        db.query(query , (error , data) => {
-            if(data.length <= 0){
-                res.send("a7a")
-            }
-            else{
-             if(pass_i == data[0].password){
-                res.send("dart ya seee3")
-             }
-            }
-        })
+        res.render("index.pug", {name: req.body.user });
     })
 module.exports = router;
