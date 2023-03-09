@@ -490,8 +490,10 @@ height: 100%;
     margin-right: 50px;
 }
 .btn2{
+    position: relative;
     display: block;
     color: orangered;
+    width: 25%;
     border: 1px;
     border-style: solid;
     border-color:orangered;
@@ -499,7 +501,8 @@ height: 100%;
     font-style: bolder;
     background-color: transparent;
     margin-top:30px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .btn2:hover{
     background-color: orangered;
