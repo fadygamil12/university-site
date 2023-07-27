@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    include ../public/links.pug
+  body
+    section.sub-header
+      include ../public/nav.pug
+      .bodytext
+        h1 Profile
+    section.about
+      div
+        h2 Welcome student #{name}
+        p
+          | Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus,Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus,Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus,Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus,Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus,Eu eros vulputate suscipiantur est. Cu qui commodo minimum delectus,
+        a.btn2(href='/user/logout') Logout
+      div
+        img(src='/images/about.jpg')
+    include footer
+    // ----js add--
+    script(src='/script.js')
