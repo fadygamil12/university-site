@@ -1,27 +1,24 @@
-const http = require('http');
-const mysql = require('mysql');
-const hostname = '127.0.0.1';
-const port = 3000;
 const express = require('express');
+
+
+
+
+
 const app = express();
-const routes = require('./routes/routes');
-const { createConnection } = require('net');
-app.use(express.static(__dirname));
-app.use('/' , routes);
-app.set('view engine', 'html');
+app.use(express.urlencoded({extended: 'false'}))
+app.use(express.json())
+
+const router = require('./routes/routes');
+console.log(__dirname +'/public')
+app.use(express.static(__dirname +'/public'));
+app.use(express.static('public'));
 
 
-// createConnection
 
-app.get('/' , (req,res)=>{
-   res.render("index.pug", {name:'fady'});
+app.set('view engine', 'pug')
+
+app.use("/",router);
+
+app.listen(5000, ()=> {
+    console.log("App started")
 })
-app.get('/account' , (req, res)=>{
-  res.render("Account.pug");
-})
-app.post('/login' , (req, res) =>{
-  console.log(req);
-});
-app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});

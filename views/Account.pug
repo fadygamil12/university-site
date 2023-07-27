@@ -1,10 +1,10 @@
 doctype html
 html
   head
-    include links.pug
+    include ../public/links.pug
   body
     section.header
-      include nav.pug
+      include  ../public/nav.pug
       .accounts
         .acc-box
           #botn
@@ -13,19 +13,24 @@ html
         .socialico
           i.fab.fa-facebook
           i.fab.fa-twitter
-        form#login55.login(method='post', action='/login')
-          input#inputus(name='user', type='text', placeholder=' Username or Email..', required='')
-          input#inputps(name='pass', type='password', placeholder=' Password..', required='')
+        if message
+          h4.alert #{message}
+        form#login55.login(method='POST', action='/user/login')
+          input#inputus1(name='user', type='text', placeholder='Email..', required='')
+          input#inputps1(name='pass', type='password', placeholder=' Password..', required='')
           .remember
             input#remember(type='checkbox')
             span Remember me
-          button.btn2(type='submit', onclick='login()')  LOGIN  
-        form#signup55.signup(action='includes/signup.inc.php')
+          button.btn2(type='sumbit')  LOGIN  
+        form#signup55.signup(action='/user/signup' , method='POST')
           input#inputus(name='Uid', type='text', placeholder=' Username ..', required='')
-          input#inputus(name='Email', type='text', placeholder=' Email..', required='')
+          input#inputus2(name='Email', type='text', placeholder=' Email..', required='')
           input#inputps(name='Pwd', type='password', placeholder=' Password..', required='')
-          input#inputps(name='Pwd2', type='password', placeholder=' Password Again..', required='')
+          input#inputps2(name='Pwd2', type='password', placeholder=' Password Again..', required='')
           .remember
-          button.btn2(name='submit', onclick='login()')  Sign up  
+          button.btn2(type='sumbit')  Sign up  
+        
+        
+
     // ----js add--
     script(src='../script.js')
