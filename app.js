@@ -1,7 +1,26 @@
 const express = require('express');
+const mongoose  = require('mongoose');
+
 const app = express();
 app.use(express.urlencoded({extended: 'false'}))
 app.use(express.json())
+
+// Connect to database
+const dotenv = require('dotenv');
+dotenv.config({
+    path:'./.env'
+})
+mongoose.connect(process.env.database_se,
+{
+    useNewUrlParser: true
+})
+.then(()=>{
+    console.log('We are in')
+})
+.catch((err)=>{
+    console.log(err)
+})
+
 const router = require('./routes/routes');
 const session = require('express-session');
 console.log(__dirname +'/public')

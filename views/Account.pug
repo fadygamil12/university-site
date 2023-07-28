@@ -16,18 +16,18 @@ html
         if message
           h4.alert #{message}
         form#login55.login(method='POST', action='/user/login')
-          input#inputus1(name='user', type='text', placeholder='Email..', required='')
+          input#inputus1(name='email', type='text', placeholder='Email..', required='')
           input#inputps1(name='pass', type='password', placeholder=' Password..', required='')
           .remember
             input#remember(type='checkbox')
             span Remember me
           button.btn2(type='sumbit')  LOGIN  
         form#signup55.signup(action='/user/signup' , method='POST')
-          input#inputus(name='Uid', type='text', placeholder=' name ..', required='')
-          input#inputus2(name='Email', type='text', placeholder=' Email..', required='')
+          input#inputus(name='name', type='text', placeholder=' name ..', required='')
+          input#inputus2(name='email', type='text', placeholder=' Email..', required='')
           input#inputus2(name='type', type='text', placeholder=' type', required='')
-          input#inputps(name='Pwd', type='password', placeholder=' Password..', required='')
-          input#inputps2(name='Pwd2', type='password', placeholder=' Password Again..', required='')
+          input#inputps(name='pwd', type='password', placeholder=' Password..', required='')
+          input#inputps2(name='pwd2', type='password', placeholder=' Password Again..', required='')
           .remember
           button.btn2(type='sumbit')  Sign up  
         

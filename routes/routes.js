@@ -3,9 +3,6 @@ const { Module } = require('module');
 const user = require('./user.js')
 router = express.Router()
 
-// dotenv.config({
-//     path:'./.env'
-// }) 
 // Handle the main routes
 router.get('/',(req,res) => {
     res.render('index.pug' ,{name:req.session.user})
