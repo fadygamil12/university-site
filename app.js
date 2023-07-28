@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 app.use(express.urlencoded({extended: 'false'}))
 app.use(express.json())
-app.set('views', '../views');
+app.set('views', '/views');
 
 // Connect to database
 const dotenv = require('dotenv');
