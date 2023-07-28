@@ -8,7 +8,7 @@ app.use(express.json())
 // Connect to database
 const dotenv = require('dotenv');
 dotenv.config({
-    path:'./.env'
+    path:'/etc/secrets/'
 })
 mongoose.connect(process.env.database_se,
 {
