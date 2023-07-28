@@ -10,10 +10,10 @@ router.post("/login" , async(req,res) =>{
     const { email, pass } = req.body;
     let user = await User.findOne({email:email});
     if(!user){
-        res.render('account.pug', {message: "This email isn't correct"})
+        res.render('../views/account.pug', {message: "This email isn't correct"})
     }
     else if (bcrypt.compareSync(pass, user.passwordhash)) {
-        res.render('account.pug', {message: "The password is wrong"})
+        res.render('../views/account.pug', {message: "The password is wrong"})
     }
     else {
         res.redirect('/')
@@ -24,10 +24,10 @@ router.post("/signup" , async (req,res)=>{
     const user = await User.findOne({email:email});
     console.log(user)
     if(user){
-        res.render('account.pug' , {message:'This email is already registered'})
+        res.render('../views/account.pug' , {message:'This email is already registered'})
     }
     else if((pwd != pwd2)){
-        res.render('account.pug' , {message:'The passwords are not identical'})
+        res.render('../views/account.pug' , {message:'The passwords are not identical'})
     } 
     else{
         let user = new User({
@@ -39,7 +39,7 @@ router.post("/signup" , async (req,res)=>{
         })
         user = await user.save();
         if(user){
-            res.render('account.pug' , {message: "You're registered. Login now"})
+            res.render('../views/account.pug' , {message: "You're registered. Login now"})
         }
         else if(err){
             console.log(err)
