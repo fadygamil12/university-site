@@ -4,6 +4,7 @@ const mongoose  = require('mongoose');
 const app = express();
 app.use(express.urlencoded({extended: 'false'}))
 app.use(express.json())
+app.set('views', path.join(__dirname, '/views'));
 
 // Connect to database
 const dotenv = require('dotenv');
